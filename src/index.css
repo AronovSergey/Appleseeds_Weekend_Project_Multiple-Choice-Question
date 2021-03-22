@@ -14,3 +14,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+button {
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

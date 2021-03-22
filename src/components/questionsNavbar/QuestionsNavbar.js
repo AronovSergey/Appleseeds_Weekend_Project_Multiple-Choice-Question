@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const QuestionsNavbar = ({ numberOfQuestions }) => {
+const QuestionsNavbar = ({ numberOfQuestions, onClick }) => {
     const length = (90 - 25) / numberOfQuestions;
     return (
         <div className="navbar">
@@ -12,8 +12,9 @@ const QuestionsNavbar = ({ numberOfQuestions }) => {
                         style={{
                             height: `${length}vw`,
                             width: `${length}vw`,
-                            fontSize: `${length / 2}rem`,
+                            fontSize: `${length / 2}vw`,
                         }}
+                        onClick={() => onClick(i)}
                     >
                         {i + 1}
                     </button>
@@ -23,4 +24,4 @@ const QuestionsNavbar = ({ numberOfQuestions }) => {
     )   
 }
 
-export default QuestionsNavbar
+export default QuestionsNavbar;
