@@ -1,9 +1,27 @@
 .App {
     margin: 3vh 3vw;
-    padding: 2vh 2vw;
-    height: 90vh;
+    padding: 4vh 2vw;
+    height: 86vh;
     width: 90vw;
     background-color: #fff;
     border-radius: 16px;
     text-align: center;
+}
+
+
+/****************** Navbar Section ******************/
+.navbar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .navbar__btn {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    outline: inherit;
 }
