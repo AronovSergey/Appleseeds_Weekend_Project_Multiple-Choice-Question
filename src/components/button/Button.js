@@ -1,16 +1,17 @@
 import React from 'react'
 
-const Button = ({ text, onClick, type }) => {
+const Button = ({ text, onClick, type, selectedQuestion }) => {
     return (
         <button 
-            className="btn"
+            className={`btn ${(type === "next"&& selectedQuestion === 9) ? "secondary" : ""}`} 
             style={{
                 left: type === "previous" ? "10%" : "",
-                right: type === "next" ? "10%" : ""
+                right: type === "next" ? "10%" : "",
+                display: (type === "previous" && selectedQuestion === 0) ? "none" : "",
             }}
             onClick={onClick}
         >
-            {text}
+            {(type === "next"&& selectedQuestion === 9) ? "Submit" : text}
         </button>
     )
 }

@@ -24,3 +24,8 @@ button {
   outline: inherit;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+
+.secondary {
+  background-color: #0652DD;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}

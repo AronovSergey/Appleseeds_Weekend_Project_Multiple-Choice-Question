@@ -42,12 +42,14 @@ export default class Main extends Component {
                     text="NEXT QUESTION"
                     type="next"
                     onClick={() => this.onNextClick()}
+                    selectedQuestion={this.state.selectedQuestion}
                 />
 
                 <Button 
                     text="PREVIOUS QUESTION"
                     type="previous"
                     onClick={() => this.onPreviousClick()}
+                    selectedQuestion={this.state.selectedQuestion}
                 />
             </div>
         )
