@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Button = ({ text, onClick, type, selectedQuestion }) => {
+    const isSubmit = type === "next" && selectedQuestion === 9;
     return (
         <button 
             className={`btn ${(type === "next"&& selectedQuestion === 9) ? "secondary" : ""}`} 
@@ -11,7 +12,7 @@ const Button = ({ text, onClick, type, selectedQuestion }) => {
             }}
             onClick={onClick}
         >
-            {(type === "next"&& selectedQuestion === 9) ? "Submit" : text}
+            {isSubmit ? "Submit" : text}
         </button>
     )
 }

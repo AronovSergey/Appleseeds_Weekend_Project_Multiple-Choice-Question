@@ -19,10 +19,17 @@
 }
 
 .navbar .navbar__btn {
+    position: relative;
     border-radius: 50%;
 }
 
-
+.navbar .check_icon {
+    position: absolute;
+    color: white;
+    background: #2ecc71;
+    border-radius: 50%;
+    bottom: 0;
+}
 
 /********************** Question **********************/
 .question {
