@@ -35,7 +35,10 @@ export default class Main extends Component {
     onRadioButtonChange(event) {
         const newData = this.state.data;
         newData[this.state.selectedQuestion].userChoose = event.target.value;
-        this.setState({ data: newData });
+        this.setState({
+            data: newData,
+            selectedQuestion: (this.state.selectedQuestion < dataLength - 1) ? this.state.selectedQuestion + 1 : this.state.selectedQuestion 
+        });
     }
 
     onTryAgainClick(){
