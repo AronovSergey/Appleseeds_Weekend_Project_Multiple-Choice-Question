@@ -12,7 +12,7 @@ export default class Main extends Component {
     }
 
     componentDidMount() {
-        this.setState({ data: data.map(question => ({ ...question, userChoose: -1}) )})
+        this.setState({ data: data.map(question => ({ ...question, userChoose: -1 }))})
     }
 
     onNavbarClick(index) {
@@ -38,15 +38,28 @@ export default class Main extends Component {
         this.setState({ data: newData });
     }
 
+    onTryAgainClick(){
+        this.setState({ 
+            data: data.map(question => ({ ...question, userChoose: -1 })),
+            selectedQuestion: 0,
+            displayResult: false,
+        })
+    }
+
     render() {
         if(this.state.data.length > 0) {
             const { question, answers, userChoose } = this.state.data[this.state.selectedQuestion];
             if(this.state.displayResult){
-                console.log(this.state.data)
                 return(
                     <div>
                         <h1>Result:</h1>
-                        <h2>{this.state.data.reduce((accumulator, question) => accumulator + (question.answer === parseInt(question.userChoose) ? 10 : 0), 0)}</h2>
+                        <h2>{this.state.data.reduce((accumulator, question) => accumulator + (question.answer === parseInt(question.userChoose) ? (100 / dataLength) : 0), 0).toFixed(2)}</h2>
+                        <button 
+                            className="try-again-button"
+                            onClick={() => this.onTryAgainClick()}
+                        >
+                            Try Again
+                        </button>
                     </div>
                 )
             }
@@ -57,6 +70,7 @@ export default class Main extends Component {
                             answers={this.state.data.map(question => question.userChoose)}
                             onClick={(index) => this.onNavbarClick(index)}
                             selectedQuestion={this.state.selectedQuestion}
+                            
                         />
     
                         <Question 
@@ -72,6 +86,7 @@ export default class Main extends Component {
                             onClick={() => this.onNextClick()}
                             selectedQuestion={this.state.selectedQuestion}
                             disabled={this.state.data.some(question => question.userChoose === -1)}
+                            dataLength={dataLength}
                         />
     
                         <Button 

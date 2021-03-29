@@ -3,9 +3,7 @@ import React from 'react';
 const Question = ({ question, answers, onRadioButtonChange, userChoose }) => {
     return (
         <div className="question">
-            <h1
-                className="question__title"
-            >{question}</h1>
+            <h1>{question}</h1>
             <div>
                 <div className="question__answer">
                     <input

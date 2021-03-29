@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Button = ({ text, onClick, type, selectedQuestion, disabled = false }) => {
-    const isSubmit = type === "next" && selectedQuestion === 9;
+const Button = ({ text, onClick, type, selectedQuestion, dataLength, disabled = false }) => {
+    const isSubmit = type === "next" && selectedQuestion === (dataLength - 1);
     return (
         <button 
             className={`btn ${(disabled && isSubmit) ? "secondary" : ""}`} 

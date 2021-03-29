@@ -34,7 +34,7 @@
 /********************** Question **********************/
 .question {
     margin: 2vh 0;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -45,11 +45,7 @@
 .question .question__title {
     font-size: 6vh;
     font-weight: 400;
-}
-
-.question .question__title {
-    font-size: 6vh;
-    font-weight: 400;
+    max-height: 20%;
 }
 
 .question .question__answer {
@@ -77,4 +73,11 @@
     font-weight: 600;
     padding: 15px;
     bottom: 10%;
+}
+
+.try-again-button {
+    font-size: 4rem;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
 }

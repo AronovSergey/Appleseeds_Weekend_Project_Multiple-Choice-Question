@@ -65,50 +65,50 @@ const data = [
         ],
         answer: 4
     },
-    {
-        question: 'What is the correct syntax for JavaScript Ternary Operator?',
-        answers: 
-        [
-            'condition ? expIfFalse : expIfTrue',
-            'expIfFalse? expIfTrue : condition',
-            'condition ? expIfTrue : expIfFalse',
-            'expIfTrue? condition : expIfFalse',
-        ],
-        answer: 3
-    },
-    {
-        question: 'What is the correct way to select the parent of an element?',
-        answers: 
-        [
-            'element.elementParent',
-            'element.parentElement',
-            'element.getParent',
-            'element.parent',
-        ],
-        answer: 2
-    },
-    {
-        question: 'What is the difference between arguments and parameters?',
-        answers: 
-        [
-            'In JavaScript, there are no parameters, only arguments',
-            'In JavaScript, There is no difference between them',
-            'Arguments - placeholders, Parameters - the actual values',
-            'Arguments - the actual values, Parameters - placeholders',
-        ],
-        answer: 4
-    },
-    {
-        question: 'What method do we use to create an event listener in JavaScript?',
-        answers: 
-        [
-            'makeEventListener()',
-            'listen()',
-            'addEventListener()',
-            'on()',
-        ],
-        answer: 3
-    },
+    // {
+    //     question: 'What is the correct syntax for JavaScript Ternary Operator?',
+    //     answers: 
+    //     [
+    //         'condition ? expIfFalse : expIfTrue',
+    //         'expIfFalse? expIfTrue : condition',
+    //         'condition ? expIfTrue : expIfFalse',
+    //         'expIfTrue? condition : expIfFalse',
+    //     ],
+    //     answer: 3
+    // },
+    // {
+    //     question: 'What is the correct way to select the parent of an element?',
+    //     answers: 
+    //     [
+    //         'element.elementParent',
+    //         'element.parentElement',
+    //         'element.getParent',
+    //         'element.parent',
+    //     ],
+    //     answer: 2
+    // },
+    // {
+    //     question: 'What is the difference between arguments and parameters?',
+    //     answers: 
+    //     [
+    //         'In JavaScript, there are no parameters, only arguments',
+    //         'In JavaScript, There is no difference between them',
+    //         'Arguments - placeholders, Parameters - the actual values',
+    //         'Arguments - the actual values, Parameters - placeholders',
+    //     ],
+    //     answer: 4
+    // },
+    // {
+    //     question: 'What method do we use to create an event listener in JavaScript?',
+    //     answers: 
+    //     [
+    //         'makeEventListener()',
+    //         'listen()',
+    //         'addEventListener()',
+    //         'on()',
+    //     ],
+    //     answer: 3
+    // },
 ];
 
 const dataLength = data.length;
