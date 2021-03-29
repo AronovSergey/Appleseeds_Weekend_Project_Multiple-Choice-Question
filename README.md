@@ -1,3 +1,3 @@
-#What are Multiple Choice Questions?
+# What are Multiple Choice Questions?
 
 Multiple choice questions are fundamental survey questions which provides respondents with multiple answer options. Primarily, multiple choice questions can have single select or multi select answer options. These are the most fundamental questions of a survey or questionnaire where the respondents are expected to select one or more than one option from the multiple choice question options. Learn everything about Multiple Choice Questions, its parts and over 17 multiple choice question types and examples.
